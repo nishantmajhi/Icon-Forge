@@ -1,0 +1,10 @@
+node_modules
+dist
+.DS_Store
+
+# Written and removed by tests/browser/run.js. They live inside the project
+# rather than in the system temp directory because the code they hold imports
+# jszip, pica and file-saver by bare specifier, and module resolution finds
+# node_modules by walking up from the importing file.
+.tmp-original
+.tmp-harness
